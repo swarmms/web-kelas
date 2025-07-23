@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  padding-top: 20px;
+  margin: 0;
+  padding: 0;
+  background: gray;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+main {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background:rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: white;
+  box-shadow: none;
+  z-index: 999;
+  transition: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 0 20px;
+  border-radius: 10px;
+  list-style: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  z-index: 1000;
+}
+
+.menu.show {
+  opacity: 1;
+  max-height: 200px;
+  padding: 10px 20px;
+}
+
+.menu li {
+  margin: 12px 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  transform: scale(1.2);
+  color: #ffff;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+h1 {
+  text-align: center;
+  padding-top: 200px;
+}
