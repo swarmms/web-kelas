@@ -241,3 +241,64 @@ p {
 .animate {
   animation: zoomIn 0.8s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 10px;
+  }
+
+  main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column;
+  }
+
+  #toggle-btn {
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .card {
+    padding: 30px;
+    width: 95%;
+  }
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  p {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+
+  .img-fluid,
+  .img-fluid2,
+  .img-fluid3,
+  .img-fluid4,
+  .img-fluid5,
+  .img-fluid6 {
+    width: 120px;
+    height: 120px;
+    margin: 10px 5px;
+  }
+
+  .ig-box {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .ig-box img {
+    width: 25px;
+    height: 25px;
+  }
+}
